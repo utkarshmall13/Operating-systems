@@ -1,0 +1,28 @@
+Note: Client requests for files only from 1-1000, this can be changed by modifying
+    multi-client.c.
+
+Experimental setup:
+    Server and Client are connected over local ethernet(100 Mbps), with single switch
+    in between.
+
+How to Run:
+    If 'files' directory is not present in working directory run 'make all',
+    else run 'make'.
+    run server and client using commands given below.
+
+    Note: comment/uncomment the lines(number given in multi-client.c) in multi-client.c
+        to allow client to write in file the received data. If running locally and
+        writing is enable keep client and server in different directory.
+
+
+Makefile commands:
+    make: creates server client executable
+    make files: generates 2MB sample random files in files directory
+    make clean: deletes server client executable
+    make distclean: deletes sample files and all executables
+
+Server running commands:
+    ./server-mp <port-number>
+
+Client running commands:
+    ./multi-client <server-address> <port-number> <users> <time> <wait> <random/fixed>
