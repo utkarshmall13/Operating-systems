@@ -1,0 +1,88 @@
+**Content of file tmp :
+dsfbdXXXXfbsdb
+sdfbdfb
+
+
+1.
+Input:
+server 127.0.0.1 5000
+getfl tmp
+
+Output:
+dsfbdXXXXfbsdb
+sdfbdfb
+
+
+2.
+Input:
+server 127.0.0.1 5000
+getfl tmp > tmp2
+
+Output:
+
+
+3.
+Input:
+server 127.0.0.1 5000
+getfl tmp | grep XXXX
+
+Output:
+dsfbdXXXXfbsdb
+
+
+4.
+Input:
+server 127.0.0.1 5000
+getsq tmp tmp tmp
+^C
+
+Output:
+Received SIGINT; downloaded 53 bytes of tmp so far.
+
+
+5.
+Input:
+server 127.0.0.1 5000
+getpl tmp tmp tmp
+^C
+
+Output:
+Received SIGINT; downloaded 53 bytes of tmp so far.
+Received SIGINT; downloaded 53 bytes of tmp so far.
+Received SIGINT; downloaded 53 bytes of tmp so far.
+
+
+6.
+Input:
+server 127.0.0.1 5000
+getbg tmp
+^C
+
+Output:
+File tmp downloaded successfully!
+
+
+7.
+Input:
+server 127.0.0.1 5000
+getbg tmp
+exit
+
+Output:
+Received SIGINT; downloaded 53 bytes of tmp so far.
+
+
+8.
+Input:
+ls
+cat tmp
+cd ..
+ls
+echo lab finished
+
+Output:
+client-shell  client-shell.cpp	get-one-file-sig  get-one-file-sig.c  lab5.pdf	makefile  server-slow.c  testcases.txt	tmp
+dsfbdXXXXfbsdb
+sdfbdfb
+130050001_130050037_a2.tar.gz  apache-tomcat-7.0.64  ast.h	      grammar	lab-5
+lab finished
