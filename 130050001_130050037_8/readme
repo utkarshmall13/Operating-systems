@@ -1,0 +1,12 @@
+Experiment specifications : 
+ 
+	Server H/W specifications:   
+		CPU: 2.50GHz, 4 Processors  
+		Memory: 1.92 GB  
+	
+	Client H/W specifications:   
+		CPU: 1.70GHz, 4 Processors  
+		Memory: 3.95 GB  
+	
+	
+	Server and Client are connected over 100Mbps ethernet, with a switch in between. 
